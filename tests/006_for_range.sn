@@ -1,0 +1,7 @@
+use std.io
+
+fn main() uses io =
+  let mut total = 0
+  for i in 1..=10
+    total += i
+  io.print("{total}")

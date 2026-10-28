@@ -1,0 +1,12 @@
+use std.io
+
+fn half(n:i32) -> i32? =
+  if n % 2 == 0 then some(n / 2) else none
+
+fn main() uses io =
+  match half(10)
+    some v => io.print("{v}")
+    none   => io.print("odd")
+  match half(7)
+    some v => io.print("{v}")
+    none   => io.print("odd")

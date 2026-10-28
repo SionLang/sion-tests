@@ -1,0 +1,6 @@
+use std.io
+
+fn main() uses io =
+  let x:u8 = 255
+  let y = x + 1
+  io.print("{y}")

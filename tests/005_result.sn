@@ -1,0 +1,11 @@
+use std.io
+
+type E = Neg
+
+fn root(n:i32) -> i32 ! E =
+  if n < 0 then err Neg else ok n
+
+fn main() uses io =
+  match root(-1)
+    ok v  => io.print("{v}")
+    err _ => io.print("negative")
